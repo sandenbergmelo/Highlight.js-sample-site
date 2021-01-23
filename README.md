@@ -1,1 +1,1 @@
-# Highlight.js-sample-site
+# Highlight.js sample site
