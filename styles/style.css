@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'Fira';
+	src: url('../fonts/fira/FiraCode-Regular.ttf');
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	color: green;
+	text-shadow: 1px 1px 2px black;
+}
+
+label,
+#tema {
+	font-size: 12pt;
+}
+
+option {
+	font-size: 14pt;
+	background-color: #2d066b;
+	color: white;
+}
+
+#lblcor,
+#cor {
+	margin-top: 8px;
+}
+
+#tema {
+	width: 95px;
+	height: 35px;
+	padding: 5px;
+	border-radius: 25px;
+	background: #B5EDE7;
+	box-shadow: 1px 1px 1px 1px #000;
+	outline: none;
+	transition: box-shadow, .5s;
+}
+
+#tema:hover,
+#cor:hover,
+#muda:hover {
+	cursor: pointer;
+} 
+
+#tema:hover {
+	box-shadow: 1px 1px 1px 2px #000;
+}
+
+#muda {
+	height: 27px;
+	font-size: 14pt;
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 8px;
+}
+
+abbr {
+	text-decoration: none;
+	cursor: help;
+}
+
+#html {
+	color: #C5400C;
+}
+
+#css {
+	color: #23B6B4;
+}
+
+code {
+	font-family: 'Fira';
+	width: 500px;
+	border-radius: 10px;
+}
+
+#rodape {
+	border-top: 2px #606060 solid;
+	margin-bottom: 0;
+}
+
+#rodape p {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+#topo {
+	position: relative;
+	float: right;
+	top: -50px;
+	margin-top: 0;
+}
