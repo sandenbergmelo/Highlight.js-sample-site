@@ -1,8 +1,5 @@
 @charset "UTF-8";
-@font-face {
-	font-family: 'Fira';
-	src: url('../fonts/fira/FiraCode-Regular.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -72,7 +69,7 @@ abbr {
 }
 
 code {
-	font-family: 'Fira';
+	font-family: 'Fira Code', monospace;
 	width: 500px;
 	border-radius: 10px;
 }
