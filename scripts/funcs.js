@@ -7,7 +7,7 @@ var muda = document.getElementById('muda')
 // Event that will trigger the functions
 tema.addEventListener('change', mudaTema)
 cor.addEventListener('change', mudaBg)
-muda.addEventListener('click', random)
+muda.addEventListener('click', randomColor)
 
 function mudaTema() {// Function to change the color theme
 	lt.href = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/" + tema.value + ".min.css"
@@ -17,14 +17,13 @@ function mudaBg() {// Function to change the background color
 	document.body.style.background = cor.value
 }
 
-function random() {// Function to change the background to a random color
+function randomColor() {// Function to change the background to a random color
 	
 	let r, g, b
-	let fundo = document.body.style
 	
 	r = Math.floor(Math.random() * 256)
 	g = Math.floor(Math.random() * 256)
 	b = Math.floor(Math.random() * 256)
 	
-	fundo.background = `rgb(${r}, ${g}, ${b})`
+	document.body.style.background = `rgb(${r}, ${g}, ${b})`
 }
