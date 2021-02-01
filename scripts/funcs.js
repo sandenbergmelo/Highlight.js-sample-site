@@ -20,11 +20,10 @@ function mudaBg() {// Function to change the background color
 function random() {// Function to change the background to a random color
 	
 	let r, g, b
-	let fundo = document.body.style
 	
 	r = Math.floor(Math.random() * 256)
 	g = Math.floor(Math.random() * 256)
 	b = Math.floor(Math.random() * 256)
 	
-	fundo.background = `rgb(${r}, ${g}, ${b})`
+	document.body.style.background = `rgb(${r}, ${g}, ${b})`
 }
