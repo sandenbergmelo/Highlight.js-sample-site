@@ -4,7 +4,7 @@ var lt = document.getElementById('lt')
 var cor = document.getElementById('cor')
 var muda = document.getElementById('muda')
 
-// Event that will trigger the functions
+// Events that will trigger the functions
 tema.addEventListener('change', mudaTema)
 cor.addEventListener('change', mudaBg)
 muda.addEventListener('click', randomColor)
