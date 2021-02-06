@@ -31,96 +31,99 @@
 	</header>
 
 	<main id="conteudo">
+
 		<h2>Java☕</h2>
 		<pre><code class="java">
-		public class Hello {
-		
-			public static void main(String[] args) {
-		
-				System.out.println("Hello, world!");
-			}
-		}
+public class Hello {
+
+	public static void main(String[] args) {
+
+		System.out.println("Hello, world!");
+	}
+}
 		</code></pre>
 		
 		<h2><abbr title="HiperText Markup Language">HTML</abbr><span id="html">&lt;&gt;</span></h2>
 		<pre><code class="html">
-		&lt;!DOCTYPE html&gt;
-		&lt;html lang="pt-br"&gt;
-			&lt;head&gt;
-				&lt;meta charset="UTF-8"&gt;
-				&lt;title&gt;Título&lt;/title&gt;
-			&lt;/head&gt;
-			&lt;body&gt;
-			  
-			&lt;/body&gt;
-		&lt;/html&gt;
-				</code></pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;title&gt;Título&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		
+	&lt;/body&gt;
+&lt;/html&gt;
+		</code></pre>
 				<h2><abbr title="Cascading Style Sheets">CSS</abbr><span id="css">{}</span></h2>
-				<pre><code class="css">
-		@charset "UTF-8";
-		@font-face {
-			font-family: 'Fira';
-			src: url('fira/ttf/FiraCode-Regular.ttf');
-		}
+		<pre><code class="css">
+@charset "UTF-8";
+@font-face {
+	font-family: 'Fira';
+	src: url('fira/ttf/FiraCode-Regular.ttf');
+}
+
+h1 {
+	color: green;
+}
+
+code {
+	font-family: 'Fira';
+	width: 500px;
+	border-radius: 10px;
+	padding-left: 130px;
+}
+		</code></pre>
 		
-		h1 {
-			color: green;
-		}
-		
-		code {
-			font-family: 'Fira';
-			width: 500px;
-			border-radius: 10px;
-			padding-left: 130px;
-		}
-			</code></pre>
-		
-			<h2>JavaScript</h2>
-			<pre><code class="javascript">
-		var num = document.getElementById('num')
-		var n = Number(num.value)
-		
-		if (n % 2 == 0) {
-			document.write(`O número  é Par!`)
-		} else {
-			document.write(`O número  é Impar!`)
-		}
-			</code></pre>
-		
-			<h2><abbr title="PHP Hypertext Preprocessor">PHP</abbr>🐘</h2>
-			<pre><code class="php">
+		<h2>JavaScript</h2>
+		<pre><code class="javascript">
+var num = document.getElementById('num')
+var n = Number(num.value)
+
+if (n % 2 == 0) {
+	document.write(`O número  é Par!`)
+} else {
+	document.write(`O número  é Impar!`)
+}
+		</code></pre>
+
+		<h2><abbr title="PHP Hypertext Preprocessor">PHP</abbr>🐘</h2>
+		<pre><code class="php">
 		&lt;?php
-		
-			$n1 = $_GET['n1'];
-			$n2 = $_GET['n2'];
-			$s = $n1 + $n2;
-		
-			echo "A Soma de $n1 e $n2 é igual a $s";
+
+$n1 = $_GET['n1'];
+$n2 = $_GET['n2'];
+$s = $n1 + $n2;
+
+echo "A Soma de $n1 e $n2 é igual a $s";
 		
 		?&gt;
-			</code></pre>
+		</code></pre>
 		
-			<h2>Python🐍</h2>
-			<pre><code>
-		from datetime import datetime
-		now = datetime.now()
-						  
-		hora = now.hour
-		minu = now.minute
-		
-		print(f'São {hora} horas e {minu} minutos')
-			</code></pre>
+		<h2>Python🐍</h2>
+		<pre><code>
+from datetime import datetime
+now = datetime.now()
+					
+hora = now.hour
+minu = now.minute
+
+print(f'São {hora} horas e {minu} minutos')
+		</code></pre>
+
 	</main>
-		<footer id="rodape">
-			<p>Site made by <a target="_blank" href="https://github.com/sandenbergmelo">Sandenberg Ferreira Melo</a> using <a href="https://highlightjs.org" target="_blank" >highlight.js</a>. 2020 - 2021</p>
-			<a href="#top">
-				<img id="topo" src="img/top.png" alt="Topo" title="Voltar ao topo">
-			</a>
-	   	</footer>
+	
+	<footer id="rodape">
+		<p>Site made by <a href="https://github.com/sandenbergmelo" target="_blank">Sandenberg Ferreira Melo</a> using <a href="https://highlightjs.org" target="_blank" >highlight.js</a>. 2020 - 2021</p>
+		<a href="#top">
+			<img id="topo" src="img/top.png" alt="Topo" title="Voltar ao topo">
+		</a>
+   	</footer>
 	   	
-	   <!-- Scripts -->
-		<script src="scripts/funcs.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-		<script>hljs.initHighlightingOnLoad()</script>
-	</body>
+   <!-- Scripts -->
+	<script src="scripts/funcs.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad()</script>
+</body>
 </html>
