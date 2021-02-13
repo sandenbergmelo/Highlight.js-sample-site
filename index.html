@@ -112,6 +112,21 @@ minu = now.minute
 print(f'São {hora} horas e {minu} minutos')
 		</code></pre>
 
+		<h2>Lua🌚</h2>
+		<pre><code class="lua">
+print(os.date())
+-- 09/16/10 13:59:32
+print(os.date("(%a) %H:%M:%S %Y-%m-%d "))
+-- (Thu) 14:01:20 2010-09-16
+
+-- benchmark
+local s = 0
+local begin_time = os.clock()
+for i=1,10000000 do s = s + i end
+print("Duração " ..  os.clock() - begin_time)
+-- Duração 0.40600000000006
+		</code></pre>
+
 	</main>
 
 	<footer id="rodape">
