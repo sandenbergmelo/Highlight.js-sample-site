@@ -10,7 +10,7 @@ cor.addEventListener('change', mudaBg)
 muda.addEventListener('click', randomColor)
 
 function mudaTema() {// Function to change the color theme
-	lt.href = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/" + tema.value + ".min.css"
+	lt.href = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/" + tema.value + ".min.css"
 }
 
 function mudaBg() {// Function to change the background color
