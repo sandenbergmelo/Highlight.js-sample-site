@@ -1,8 +1,8 @@
 // Variables of HTML elements
-var tema = document.getElementById('tema')
-var lt = document.getElementById('lt')
-var cor = document.getElementById('cor')
-var muda = document.getElementById('muda')
+let tema = document.getElementById('tema')
+let lt = document.getElementById('lt')
+let cor = document.getElementById('cor')
+let muda = document.getElementById('muda')
 
 // Events that will trigger the functions
 tema.addEventListener('change', mudaTema)
