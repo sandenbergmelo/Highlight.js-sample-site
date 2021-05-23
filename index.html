@@ -104,13 +104,17 @@ if (n % 2 == 0) {
 		
 		<h2>Python🐍</h2>
 		<pre><code>
-from datetime import datetime
-now = datetime.now()
-					
-hora = now.hour
-minu = now.minute
+while True:
+eventos, valores = janela.read()
 
-print(f'São {hora} horas e {minu} minutos')
+if eventos == sg.WIN_CLOSED:
+    break
+
+if eventos == 'entrar':
+    if valores['usuario'] == 'Sandenberg':
+        print('Usuário encontrado')
+    else:
+        print('Usuário não encontrado')
 		</code></pre>
 
 		<h2>Lua🌚</h2>
